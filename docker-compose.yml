@@ -1,0 +1,21 @@
+version: '2'
+volumes:
+    vl:
+        driver: 'local'
+
+services:
+  pgsql_aaa:
+    build: ./pgsql/
+    restart: always
+  nodejs_xxx: 
+    build: .
+    ports: 
+      - "20006:20006"
+    volumes:
+      -    /usr/src/sample-node/node_modules
+      -  .:/usr/src/sample-node
+      -    /usr/src/volume-a/
+      - vl:/usr/src/volume-b/
+    depends_on: 
+      - pgsql_aaa
+    restart: always

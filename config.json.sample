@@ -1,0 +1,11 @@
+{
+  "pg_host"       : "pgsql_aaa",
+  "pg_port"       : 5432,
+  "pg_table"      : "postgres",
+  "pg_user"       : "user1",
+  "pg_pass"       : "user1",
+  "slack_token_"  : "↓入力例: xoxp-1234567890-1234567890-1234567890-1234567890abceef1234567890abceef1234567890abceef",
+  "slack_token"   : "",
+  "slack_channel" : "twitter_trends",
+  "test_file"     : [{"filepath":"/tmp/test.txt","title":"volumes指定外"},{"filepath":"/usr/src/volume-a/text.txt","title":"volumes管理内"},{"filepath":"/usr/src/volume-b/text.txt","title":"volumes管理内 名前付き"}]
+}
